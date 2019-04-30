@@ -51,6 +51,7 @@ export default class WaterRipples extends React.Component {
           <div
             onMouseMove={this.handleMouseMove}
             onTouchMove={this.handleTouchMove}
+            onClick={this.handleMouseMove}
             className="water-ripple">
             {circles.map(({key, style: {opacity, scale, x, y}}) =>
               <div

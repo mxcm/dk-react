@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './img/logo.svg';
+// import logo from './img/logo.svg';
 import okinawa from './img/okinawa.jpg';
 import './App.css';
 
