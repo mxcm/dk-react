@@ -5,3 +5,15 @@ before_install:
   - docker build -t zyh/dk-react -f Dockerfile.dev .
 script:
   - docker run zyh/dk-react npm run test -- --coverage
+deploy:
+  provider: elasticbeanstalk
+  region: "us-west-1"
+  app: "dk-react"
+  env: "DkReact-env"
+  bucket_name: "elasticbeanstalk-us-west-1-722739487944"
+  bucket_path: "dk-react"
+  on:
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
