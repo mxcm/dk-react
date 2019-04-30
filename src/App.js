@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './img/logo.svg';
+import okinawa from './img/okinawa.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={okinawa} className="our-photo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <code>Hello, world.</code> 你好，世界。
         </p>
         <p>
-          Hello, World. 你好，世界。
+          Love you, Charlotte!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
